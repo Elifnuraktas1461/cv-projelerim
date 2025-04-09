@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktivite ve Eğlence Rehberi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Aktivite ve Eğlence Rehberi</h1>
+        <p>Hayatı keşfetmek ve eğlenmek için harika fikirler burada!</p>
+    </header>
+
+    <div class="container">
+        <div class="card" onclick="showDetails(this)">
+            <img src="resimler/doga yürüyüşü.jpeg" alt="Doğa Yürüyüşü">
+            <h2>Doğa Yürüyüşü</h2>
+            <p>Doğanın güzelliklerini keşfetmek için bir rota seçin ve yürüyüşe çıkın. Temiz hava ve huzur garanti!</p>
+        </div>
+
+        <div class="card" onclick="showDetails(this)">
+            <img src="resimler/kamp.jpeg" alt="Kamp">
+            <h2>Kamp</h2>
+            <p>Yıldızların altında uyuyun ve doğanın sessizliğini dinleyin. Unutulmaz bir deneyim için kamp ekipmanınızı hazırlayın!</p>
+        </div>
+
+        <div class="card" onclick="showDetails(this)">
+            <img src="resimler/sanat atölyeleri.jpeg" alt="Sanat Atölyeleri">
+            <h2>Sanat Atölyeleri</h2>
+            <p>Yaratıcılığınızı ortaya çıkarın. Resim, seramik veya el işi atölyelerine katılabilirsiniz.</p>
+        </div>
+
+        <div class="card" onclick="showDetails(this)">
+            <img src="resimler/macera parkları.jpeg" alt="Macera Parkları">
+            <h2>Macera Parkları</h2>
+            <p>Adrenalin dolu bir gün için zipline, tırmanma duvarları ve daha fazlasını deneyin!</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Aktivite ve Eğlence Rehberi | <a href="#">Gizlilik Politikası</a>
+    </footer>
+
+    <script>
+        function showDetails(card) {
+            const title = card.querySelector('h2').innerText;
+            const description = card.querySelector('p').innerText;
+            alert(`Seçilen Aktivite: \n\n${title}\n\nAçıklama: ${description}`);
+        }
+    </script>
+</body>
+</html>

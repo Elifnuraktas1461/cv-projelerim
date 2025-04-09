@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Tavsiye Botu</title>  
+<style>
+body {
+    background-color: #1e1e1e;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 100px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #777;
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Film Tavsiye Botu 🎬</h1>
+        <p id="film">Rastgele ilm seçme sitesine hoş geldiniz! lütfen tıklayınız!</p>
+        <button onclick="filmOner()">Film Öner 🎥</button>
+    </div>
+    <script>
+    const filmler = [
+    "Inception (2010)",
+    "The Dark Knight (2008)",
+    "Interstellar (2014)",
+    "Pulp Fiction (1994)",
+    "The Matrix (1999)",
+    "Fight Club (1999)",
+    "The Godfather (1972)",
+    "Forrest Gump (1994)",
+    "The Shawshank Redemption (1994)",
+    "The Lord of the Rings: The Return of the King (2003)"
+];
+
+function filmOner() {
+    const rastgeleFilm = filmler[Math.floor(Math.random() * filmler.length)];
+    document.getElementById("film").innerText = "Önerilen Film: " + rastgeleFilm+"harika seçim iyi seyirler😍🍿";
+}
+</script>
+</body>
+</html>

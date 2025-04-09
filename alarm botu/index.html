@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Botu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="alarm-container">
+        <h1>Alarm Botu</h1>
+        <div class="clock">
+            <div id="time"></div>
+        </div>
+
+        <div class="set-alarm">
+            <label for="alarm-time">Alarm Saatini Seçin:</label>
+            <input type="time" id="alarm-time">
+            <br>
+            <label for="alarm-day">Alarm Günü Seçin:</label>
+            <select id="alarm-day">
+                <option value="monday">Pazartesi</option>
+                <option value="tuesday">Salı</option>
+                <option value="wednesday">Çarşamba</option>
+                <option value="thursday">Perşembe</option>
+                <option value="friday">Cuma</option>
+                <option value="saturday">Cumartesi</option>
+                <option value="sunday">Pazar</option>
+            </select>
+            <br>
+            <label for="alarm-reason">Alarm Sebebini Girin:</label>
+            <input type="text" id="alarm-reason" placeholder="Alarm sebebini yazın">
+            <br>
+
+            <!-- Alarm sıklığını seçmek için yeni dropdown -->
+            <label for="alarm-frequency">Alarm Sıklığı:</label>
+            <select id="alarm-frequency">
+                <option value="once">Bir kez</option>
+                <option value="daily">Her gün</option>
+                <option value="weekly">Her hafta</option>
+                <option value="custom">Özel Aralık</option>
+            </select>
+            <br>
+
+            <button id="set-alarm-btn">Alarmı Kur</button>
+        </div>
+
+        <div id="message" class="message"></div>
+        <div id="time-left" class="time-left"></div> <!-- Kalan süreyi gösterecek alan -->
+
+        <div id="alarm-response" class="response" style="display: none;">
+            <p>Alarm Çalıyor! Duydun mu?</p>
+            <button id="yes-btn">Evet</button>
+            <button id="no-btn">Hayır</button>
+        </div>
+    </div>
+
+    <audio id="alarm-sound" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

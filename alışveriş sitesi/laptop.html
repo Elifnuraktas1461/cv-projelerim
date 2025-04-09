@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alışveriş Sitesi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Alışveriş Sitesi</h1>
+        <nav>
+            <a href="index.html">ana sayfa</a>
+            <a href="sepet.html">Sepetim</a>
+            <a href="kategoriler.html">kategoriler</a>
+        </nav>
+    </header>
+
+     <section id="kategori">
+        <h2>öne cıkanlar</h2>
+        <div class="kategori-container">
+            <div class="kategori">
+                <img src="resimler/asus laptop.webp" alt="Ürün 1" class="urun-resim">
+                <h3>ASUS Tuf Gaming F15 FX507ZC4-HN205 Intel Core I5 12500H 16GB 512GB SSD</h3>
+                <p>Fiyat: 32,999.00₺</p>
+                <button onclick="sepeteEkle('ASUS Tuf Gaming F15 FX507ZC4-HN205 Intel Core I5 12500H 16GB 512GB SSD', '32,999.00₺', 'resimler/asus laptop.webp')">Sepete Ekle</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

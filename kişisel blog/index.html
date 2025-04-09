@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişisel Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Benim Süslü Blogum</h1>
+        <nav class="nav">
+            <ul>
+                <li><a class="nav-link" data-section="home">Ana Sayfa</a></li>
+                <li><a class="nav-link" data-section="about">Hakkımda</a></li>
+                <li><a class="nav-link" data-section="blog">Blog</a></li>
+                <li><a class="nav-link" data-section="contact">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section active">
+        <h2>Hoş Geldiniz!</h2>
+        <p>Hos gelBu benim kişisel blogum. Burada sizlere yazılım hakkındaki düşüncelerimi paylaşıyorum.</p>
+        <button class="fancy-button" data-section="about">Beni Tanıyın</button>
+    </section>
+
+    <section id="about" class="section">
+        <h2>Hakkımda</h2>
+        <p>Ben bir yazılımcıyım ve bilgilerimi paylaşmayı severim yazmayı seviyorum.</p>
+        <button class="fancy-button" data-section="blog">Blog Yazıları</button>
+    </section>
+
+    <section id="blog" class="section">
+        <h2>Blog Yazıları</h2>
+        <div class="blog-container">
+            <div class="blog-card" data-title="Web Geliştirme" data-content="Web geliştirme, HTML, CSS ve JavaScript ile web siteleri oluşturmayı içerir. Modern frameworkler ve responsive tasarımlar önemlidir.Ve html en kolay ogrenebileceginiz bir dildir.">
+                <h3>Web Geliştirme</h3>
+                <p>Kısa açıklama: Web geliştirme hakkında temel bilgiler...</p>
+            </div>
+            <div class="blog-card" data-title="JavaScript İpuçları" data-content="JavaScript, web uygulamalarında interaktiflik sağlar. ES6 özellikleri, async/await ve DOM manipülasyonu gibi konular önemlidir.">
+                <h3>JavaScript İpuçları</h3>
+                <p>Kısa açıklama: JavaScript hakkında faydalı ipuçları...</p>
+            </div>
+            <div class="blog-card" data-title="CSS Animasyonları" data-content="CSS animasyonları, web sitelerini daha canlı hale getirir. Transform, transition ve keyframe animasyonları yaygın olarak kullanılır.">
+                <h3>CSS Animasyonları</h3>
+                <p>Kısa açıklama: CSS animasyonları ile harika geçişler...</p>
+            </div>
+            <div class="blog-card" data-title="ilk hangi dil ile baslamalıyım ?" data-content="Yazılıma ilk olarak python ile başlaayabilirsiniz. PYTHON basit ve aslında kodları ögrenmesi ve elimizin bu kodları yazmaya hızlı olmasını ve  bizi diğer yazılım dillerini yazarken zorlanmamöamızı sağlar ve diğer kodlara yabancılık cekmeyiz.">
+                <h3>ilk hangi dil ile baslamalıyım ?</h3>
+                <p>Kısa açıklama: yazılıma ilk olarak...</p>
+            </div>
+            <div class="blog-card" data-title="peki nasıl ogrenirim ?" data-content="Yazılım dillerini yazarak ve ornekler projeler yaparak ögrenebilirsin yada sunu yapabilirsin mesela her dilin arasında bir kodlama yap genel olarak kodlar birbirinin benzeridir mesela mesaj vermek icin javascriptte biz alert kullanıyoruz ama c# nesne agırlıklı kodlarda ise messagebox.show diyerek mesaj verebiliryoruz yani gordugunuz gibi yazılım dilleri birbirine biraz da olsa benze ama hepsi için aynuı seyi soyleyemeyiz denemeyinde bence mesela bir css ile java kodlarını birbirine benzetemezsiniz.">
+                <h3>peki nasıl ogrenirim ?</h3>
+                <p>Kısa açıklama:  yazılım dillerini...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>İletişim</h2>
+        <p>telefon numarası:0552 287 61 06</p>
+        <p>e posta:</p>
+        <button class="fancy-button" data-section="home">Başa Dön</button>
+    </section>
+
+    <!-- Modal (Detaylı bilgi göstermek için) -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+</body>
+</html>

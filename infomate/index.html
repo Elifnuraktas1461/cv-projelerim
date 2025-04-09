@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İnfomate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Infomate</h2>
+        </div>
+        <div class="infomate" id="infomate">
+            <div class="bot-message chat-message bot">
+                Merhaba! Ben Infomate. Size nasıl yardımcı olabilirim? Lütfen istediğiniz konuyu basit ve anlaşılır yazınız.
+                Daha fazla bilgi için <a href="daha fazla bilgi.html"><button>ile ilgili kalıplar</button></a> kısmına gidin.
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Bir mesaj yaz..." onkeypress="handleKeyPress(event)" />
+            <button id="send-btn" onclick="sendMessage()">📩</button>
+            <button id="voice-btn" onclick="startListening()">🎤</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

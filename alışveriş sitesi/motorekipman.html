@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alışveriş Sitesi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Alışveriş Sitesi</h1>
+        <nav>
+            <a href="index.html">ana sayfa</a>
+            <a href="sepet.html">Sepetim</a>
+            <a href="kategoriler.html">kategoriler</a>
+        </nav>
+    </header>
+
+     <section id="kategori">
+        <h2>öne cıkanlar</h2>
+        <div class="kategori-container">
+            <div class="kategori">
+                <img src="resimler/kask motor.webp" alt="Ürün 1" class="urun-resim">
+                <h3>Ls2 Rapid 2 Mat Siyah Full Face Motosiklet Kaskı Siyah Vizörlü</h3>
+                <p>Fiyat:  3,999.00₺</p>
+                <button onclick="sepeteEkle('Ls2 Rapid 2 Mat Siyah Full Face Motosiklet Kaskı Siyah Vizörlü', ' 3,999.00₺', 'resimler/kategori motoe.webp')">Sepete Ekle</button>
+            </div>
+            <div class="kategori">
+                <img src="resimler/motor eldiven.webp" alt="Ürün 3" class="urun-resim">
+                <h3>EFILI Motosiklet Eldiveni Dokunmatik Uzun Siyah Motor Eldiven Kemik Avuc Ici Korumali Motorcu Nx1</h3>
+                <p>Fiyat:  498.00₺</p>
+                <button onclick="sepeteEkle('EFILI Motosiklet Eldiveni Dokunmatik Uzun Siyah Motor Eldiven Kemik Avuc Ici Korumali Motorcu Nx1',    '498.00', 'resimler/motor eldiven.webp')">Sepete Ekle</button>
+            </div>
+            <div class="kategori">
+                <img src="resimler/motor mont.webp" alt="Ürün 3" class="urun-resim">
+                <h3>Clover Gts-3 WP Airbag Mont</h3>
+                <p>Fiyat:  14,599.01₺</p>
+                <button onclick="sepeteEkle('Clover Gts-3 WP Airbag Mont',    '14,599.01', 'resimler/motor mont.webp')">Sepete Ekle</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Döviz & Kripto Para Çevirici</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Döviz & Kripto Para Çevirici</h1>
+        <div class="theme-toggle">
+            <button id="toggle-dark">🌙</button>
+        </div>
+        <div class="converter">
+            <input type="number" id="amount" placeholder="Miktar" value="1">
+            <select id="from-currency"></select>
+            <span>➡️</span>
+            <select id="to-currency"></select>
+            <button id="convert">Çevir</button>
+        </div>
+        <p id="result">Sonuç: -</p>
+        <canvas id="chart"></canvas>
+        <div class="notifications">
+            <input type="number" id="target-price" placeholder="Hedef Fiyat">
+            <button id="set-alert">🔔 Uyarı Kur</button>
+        </div>
+    </div>
+</body>
+</html>

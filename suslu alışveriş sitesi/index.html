@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alışveriş sitesi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>E-Ticaret Mağazası</h1>
+      <a href=""><button>ana sayfa</button></a>
+      </select>
+      <button class="theme-toggle-btn">🌙</button>
+    </header>
+
+    <div class="products">
+      <div class="product">
+        <img src="resimler/telefon one cıkanlar.webp" width="120px" height="150px">
+        <h3>samsung a 16</h3>
+        <p>Fiyat: 9990tl</p>
+        <button class="add-to-cart" data-product="samsung a 16" data-price="9990tl">Sepete Ekle</button>
+      </div>
+      <div class="product">
+        <img src="resimler/kasa bilgisayar one cikanlar.webp" width="120px" height="150px">
+        <h3>kasa bilgisayar</h3>
+        <p>Fiyat: 1.548.128.00₺</p>
+        <button class="add-to-cart" data-product="kasa bilgisayar" data-price="1.548.128.00tl">Sepete Ekle</button>
+      </div>
+      <div class="product">
+        <img src="resimler/motor.webp" width="120px" height="150px">
+        <h3>cf moto 250 sr siyah-gri motorcyle</h3>
+        <p>Fiyat: 250.000₺</p>
+        <button class="add-to-cart" data-product="cf moto 250 sr siyah-gri motorcyle" data-price="250.000tl">Sepete Ekle</button>
+      </div>
+    </div>
+
+    <button class="view-cart-btn">Sepeti Görüntüle</button>
+
+    <div class="cart-container">
+      <div class="cart">
+        <h2>Sepetiniz</h2>
+        <ul class="cart-items"></ul>
+        <p class="total-price">Toplam: 0₺</p>
+        <button class="close-cart-btn">Kapat</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

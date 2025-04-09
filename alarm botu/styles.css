@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.alarm-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 40px;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+.clock {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: pulse 1.5s infinite alternate;
+}
+
+.set-alarm {
+    margin-top: 30px;
+}
+
+input[type="time"], input[type="text"], select {
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: #ff7e5f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #feb47b;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.response {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+#time-left {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+#yes-btn, #no-btn {
+    font-size: 1.2rem;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#yes-btn {
+    background-color: #4caf50;
+}
+
+#no-btn {
+    background-color: #f44336;
+}
+
+#yes-btn:hover {
+    background-color: #45a049;
+}
+
+#no-btn:hover {
+    background-color: #e53935;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        color: #ffeb3b;
+    }
+    100% {
+        transform: scale(1.1);
+        color: #ff7043;
+    }
+}

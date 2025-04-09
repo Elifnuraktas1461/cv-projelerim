@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Günlük & Not Defteri</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode">
+  <div class="app">
+    <header>
+      <h1>Günlük ve Not Defteri</h1>
+      <button id="toggle-darkmode" onclick="toggleDarkMode()">Karanlık Modu Aç/Kapat</button>
+    </header>
+
+    <div id="password-container">
+      <input type="password" id="password" placeholder="Şifreyi Girin">
+      <button onclick="verifyPassword()">Şifreyi Doğrula</button>
+    </div>
+
+    <div id="add-daily">
+      <textarea id="note-input" placeholder="Günlüğünüzü buraya yazın..."></textarea>
+      <button id="save-note" onclick="saveNote()">Kaydet</button>
+    </div>
+
+    <div id="notes-container">
+      <!-- Notlar bölümü -->
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

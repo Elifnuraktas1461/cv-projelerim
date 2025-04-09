@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alışveriş Sitesi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Alışveriş Sitesi</h1>
+        <nav>
+            <a href="kategoriler.html">Kategori</a>
+            <a href="sepet.html">Sepetim</a>
+        </nav>
+    </header>
+
+    <section id="kategori">
+        <h2>öne cıkanlar</h2>
+        <div class="kategori-container">
+            <div class="kategori">
+                <img src="resimler/telefon one cıkanlar.webp" alt="Ürün 1" class="urun-resim">
+                <h3>Samsung Galaxy A16 128 Gb</h3>
+                <p>Fiyat: 9,999.00₺</p>
+                <button onclick="sepeteEkle('Samsung Galaxy A16 128 Gb', '9,999.00₺', 'resimler/telefon one cıkanlar.webp')">Sepete Ekle</button>
+            </div>
+            <div class="kategori">
+                <img src="resimler/kasa bilgisayar one cikanlar.webp" alt="Ürün 2" class="urun-resim">
+                <h3>Turbox Tx45 i7 860 8GB Ram 256GB SSD 4GB EK. 23.6 inç Curved Masaüstü Oyun Pc Bilgisayarı</h3>
+                <p>Fiyat:  9,499.00₺</p>
+                <button onclick="sepeteEkle('turbox Tx45 i7 860 8GB Ram 256GB SSD 4GB EK. 23.6 inç Curved Masaüstü Oyun Pc Bilgisayarı', '9,499.00' ,'resimler/kasa bilgisayar one cikanlar.webp')">Sepete Ekle</button>
+            </div>
+            <div class="kategori">
+                <img src="resimler/motor.webp" alt="Ürün 3" class="urun-resim">
+                <h3>Cfmoto 250Sr Touring Siyah-Gri Motosiklet</h3>
+                <p>Fiyat:  213,600.00₺</p>
+                <button onclick="sepeteEkle('Cfmoto 250Sr Touring Siyah-Gri Motosiklet',    '213.600.00', 'resimler/motor.webp')">Sepete Ekle</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
